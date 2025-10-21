@@ -20,7 +20,7 @@ Este proyecto despliega una infraestructura en **AWS**, utilizando **Terraform**
 ## Estructura del proyecto
 
 ## Estructura del proyecto
-
+```
   terraform-proyecto-mundosE/
   ├── backend-bootstrap/               # Crea el bucket S3 para el backend
   │   ├── main.tf
