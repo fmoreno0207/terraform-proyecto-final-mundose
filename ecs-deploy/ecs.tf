@@ -2,12 +2,12 @@
 # ECS Cluster + Task Definition + Service
 ##############################################
 
-# 1️⃣ Cluster ECS
+# Cluster ECS
 resource "aws_ecs_cluster" "main" {
   name = "${var.project_name}-cluster"
 }
 
-# 2️⃣ Task Definition (define el contenedor que se ejecuta)
+# Task Definition (define el contenedor que se ejecuta)
 resource "aws_ecs_task_definition" "app" {
   family                   = "${var.project_name}-task"
   network_mode             = "awsvpc"
@@ -17,7 +17,7 @@ resource "aws_ecs_task_definition" "app" {
 
   container_definitions = jsonencode([
     {
-      name      = "hello-app"
+      name      = "ecommerce-app"
       image     = var.container_image
       essential = true
       portMappings = [
@@ -38,7 +38,7 @@ resource "aws_ecs_task_definition" "app" {
   execution_role_arn = aws_iam_role.ecs_task_execution_role.arn
 }
 
-# 3️⃣ Service ECS (ejecuta la tarea en Fargate con IP pública)
+# Service ECS (ejecuta la tarea en Fargate con IP pública)
 resource "aws_ecs_service" "app_service" {
   name            = "${var.project_name}-service"
   cluster         = aws_ecs_cluster.main.id

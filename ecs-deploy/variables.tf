@@ -10,5 +10,5 @@ variable "container_image" {
 
 variable "project_name" {
   description = "Nombre base del proyecto"
-  default     = "app-mundose-demo"
+  default     = "trabajo-final-mundose"
 }

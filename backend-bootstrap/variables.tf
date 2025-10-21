@@ -5,7 +5,7 @@ variable "region" {
 
 variable "bucket_name" {
   description = "Nombre del bucket S3 para guardar el state"
-  default     = "mi-bucket-terraform-state-demo"
+  default     = "bucket-terraform-state-proyecto-final-mundose"
 }
 
 # variable "dynamodb_table" {
