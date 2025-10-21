@@ -22,22 +22,21 @@ Este proyecto despliega una infraestructura en **AWS**, utilizando **Terraform**
 ## Estructura del proyecto
 
 terraform-proyecto-mundosE/
-├── backend-bootstrap/ # Crea el bucket S3 para el backend
-│ ├── main.tf
-│ ├── provider.tf
-│ ├── variables.tf
-│ └── terraform.tfvars
+├── backend-bootstrap/               # Crea el bucket S3 para el backend
+│   ├── main.tf
+│   ├── provider.tf
+│   ├── variables.tf
+│   └── terraform.tfvars
 │
-└── ecs-deploy/ # Despliega la infraestructura ECS Fargate
-├── backend.tf
-├── provider.tf
-├── networking.tf
-├── iam.tf
-├── ecs.tf
-├── variables.tf
-├── outputs.tf
-└── terraform.tfvars
-
+└── ecs-deploy/                      # Despliega la infraestructura ECS Fargate
+    ├── backend.tf
+    ├── provider.tf
+    ├── networking.tf
+    ├── iam.tf
+    ├── ecs.tf
+    ├── variables.tf
+    ├── outputs.tf
+    └── terraform.tfvars
 
 ---
 
