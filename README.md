@@ -105,7 +105,7 @@ terraform {
 }
 
 
-# Inicializar y desplegar:
+Inicializar y desplegar:
 
   - terraform init -reconfigure
   - terraform apply -auto-approve
