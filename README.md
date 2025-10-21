@@ -79,23 +79,21 @@ Terraform crea los siguientes recursos:
  # Crear el backend
 Entrar en la carpeta de bootstrap y crear el backend remoto:
 
-cd backend-bootstrap
-terraform init
-terraform apply -auto-approve
-
+  - cd backend-bootstrap
+  - terraform init
+  - terraform apply -auto-approve
 
 Esto crea el bucket S3 y la tabla DynamoDB.
 Guardá los nombres generados (se usan en el siguiente paso).
 
- Desplegar la infraestructura ECS
+# Desplegar la infraestructura ECS
 
 Entrar a la carpeta principal del despliegue:
 
-cd ../ecs-deploy
-
+  - cd ../ecs-deploy
 
 Editar el archivo backend.tf y poner el nombre del bucket S3 y la región creados en la fase anterior:
-
+```
 terraform {
   backend "s3" {
     bucket         = "bucket-terraform-state-fmoreno-001"
