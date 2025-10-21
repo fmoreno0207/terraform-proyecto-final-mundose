@@ -105,22 +105,19 @@ terraform {
 }
 
 
-Inicializar y desplegar:
+# Inicializar y desplegar:
 
-terraform init -reconfigure
-terraform apply -auto-approve
-
+  - terraform init -reconfigure
+  - terraform apply -auto-approve
 
 Al finalizar, verás:
 
-Apply complete! Resources: XX added, 0 changed, 0 destroyed.
+Apply complete! Resources: XX added, XX changed, 0 destroyed.
 
- Obtener la IP pública
- Opción 1 — Desde la consola AWS
-
-Ir a Amazon ECS Console
-
-Seleccionar tu cluster (miapp-demo-cluster)
+ - Obtener la IP pública
+ - Opción 1 — Desde la consola AWS
+ - Ir a Amazon ECS Console
+ - Seleccionar tu cluster ejemplo: (miapp-demo-cluster)
 
 Ir a Tasks → Task ID → Networking
 
