@@ -37,7 +37,7 @@ Este proyecto despliega una infraestructura en **AWS**, utilizando **Terraform**
       ├── variables.tf
       ├── outputs.tf
       └── terraform.tfvars
-
+```
 ---
 
 ## Infraestructura que se crea
