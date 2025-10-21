@@ -67,22 +67,16 @@ Terraform crea los siguientes recursos:
 
 ---
 
-Requisitos previos
+## Requisitos previos
 
-Cuenta AWS con permisos suficientes (IAM + ECS + S3 + DynamoDB)
+- Cuenta AWS con permisos suficientes (IAM + ECS + S3 + DynamoDB)
+- Terraform >= 1.6.0
+- AWS CLI configurado con credenciales válidas:
+    - aws configure
+    - Configurar la región que quieras usar (ej. us-east-1 o sa-east-1)
 
-Terraform >= 1.6.0
-
-AWS CLI configurado con credenciales válidas:
-
-aws configure
-
-
-Configurar la región que quieras usar (ej. us-east-1 o sa-east-1)
-
- Instrucciones de uso
- Crear el backend
-
+ ## Instrucciones de uso
+ # Crear el backend
 Entrar en la carpeta de bootstrap y crear el backend remoto:
 
 cd backend-bootstrap
